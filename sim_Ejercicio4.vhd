@@ -53,20 +53,24 @@ BEGIN
    begin		
       -- hold reset state for 100 ns.
          wait for 100 ns;	
-		   A <= "000011";
-			B <= "000111";
+		   A <= "00000011";
+			B <= "00000111";
+            Selector <= '0';
 			wait for 0100 ns;
 			wait for 100 ns;	
-		   A <= "000011";
-			B <= "000111";
+		   A <= "10000000";
+			B <= "00000001";
+            Selector <= '1';
 			wait for 0100 ns;
 			wait for 100 ns;	
-		   A <= "000011";
-			B <= "000111";
+		   A <= "00001111";
+			B <= "00000001";
+            Selector <= '0';
 			wait for 0100 ns;
 			wait for 100 ns;	
-		   A <= "000011";
-			B <= "000111";
+		   A <= "11111111";
+			B <= "00000001";
+            Selector <= '1';
 			wait for 0100 ns;
 			
 			
