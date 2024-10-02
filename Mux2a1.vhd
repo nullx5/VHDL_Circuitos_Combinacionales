@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------------------
 -- Company: UNAD
--- Engineer: Juan León 
+-- Engineer: Juan LeÃ³n 
 -- Create Date:    13:11:04 10/08/2018 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -17,6 +17,8 @@ architecture Behavioral of Mux2a1 is
 begin
 	with Switch select
 		F <= E0 when '0',
-			  E1 when '1';
+             E1 when others;
+			  --E1 when '1';
+              
 end Behavioral;
 
